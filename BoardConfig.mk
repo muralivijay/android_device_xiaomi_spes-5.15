@@ -8,7 +8,6 @@ BUILD_BROKEN_DUP_RULES := true
 BUILD_BROKEN_ELF_PREBUILT_PRODUCT_COPY_FILES := true
 
 DEVICE_PATH := device/xiaomi/spes
-KERNEL_PATH := $(DEVICE_PATH)-kernel
 
 # A/B
 AB_OTA_UPDATER := true
@@ -106,31 +105,44 @@ BOARD_BOOTCONFIG := \
 BOARD_KERNEL_CMDLINE := \
     video=vfb:640x400,bpp=32,memsize=3072000
 
-# Kernel prebuilt
+# Kernel
 TARGET_KERNEL_ARCH := arm64
 TARGET_KERNEL_HEADER_ARCH := arm64
-TARGET_KERNEL_SOURCE := $(KERNEL_PATH)/kernel-headers
 TARGET_KERNEL_VERSION := 5.15
+TARGET_KERNEL_SOURCE := kernel/xiaomi/sm6225-5.15
+TARGET_KERNEL_CONFIG := \
+    gki_defconfig \
+    vendor/bengal_GKI.config \
+    vendor/spes_GKI.config
+KERNEL_LTO := none
 
-TARGET_NO_KERNEL_OVERRIDE := true
-INLINE_KERNEL_BUILDING := true
+# Kernel (modules)
+TARGET_KERNEL_EXT_MODULE_ROOT := kernel/xiaomi/sm6225-modules
+TARGET_KERNEL_EXT_MODULES := \
+        qcom/opensource/mmrm-driver \
+        qcom/opensource/audio-kernel \
+        qcom/opensource/camera-kernel \
+        qcom/opensource/dataipa/drivers/platform/msm \
+        qcom/opensource/datarmnet/core \
+        qcom/opensource/datarmnet-ext/aps \
+        qcom/opensource/datarmnet-ext/offload \
+        qcom/opensource/datarmnet-ext/shs \
+        qcom/opensource/datarmnet-ext/perf \
+        qcom/opensource/datarmnet-ext/perf_tether \
+        qcom/opensource/datarmnet-ext/sch \
+        qcom/opensource/datarmnet-ext/wlan \
+        qcom/opensource/display-drivers/msm \
+        qcom/opensource/video-driver \
+        qcom/opensource/graphics-kernel \
+        qcom/opensource/touch-drivers \
+        qcom/opensource/wlan/platform \
+        qcom/opensource/wlan/qcacld-3.0 \
+        qcom/opensource/bt-kernel
 
-TARGET_FORCE_PREBUILT_KERNEL := true
-TARGET_PREBUILT_KERNEL := $(KERNEL_PATH)/kernel
-
-PRODUCT_COPY_FILES += $(TARGET_PREBUILT_KERNEL):kernel
-
-# Kernel modules
-BOARD_VENDOR_KERNEL_MODULES_LOAD := $(strip $(shell cat $(KERNEL_PATH)/vendor_dlkm/modules.load))
-BOARD_VENDOR_KERNEL_MODULES_BLOCKLIST_FILE :=  $(KERNEL_PATH)/vendor_dlkm/modules.blocklist
-BOARD_VENDOR_RAMDISK_KERNEL_MODULES_LOAD := $(strip $(shell cat  $(KERNEL_PATH)/vendor_ramdisk/modules.load))
-BOARD_VENDOR_RAMDISK_KERNEL_MODULES_BLOCKLIST_FILE := $(KERNEL_PATH)/vendor_ramdisk/modules.blocklist
-BOARD_VENDOR_RAMDISK_RECOVERY_KERNEL_MODULES_LOAD := $(strip $(shell cat $(KERNEL_PATH)/vendor_ramdisk/modules.load.recovery))
-
-PRODUCT_COPY_FILES += \
-    $(call find-copy-subdir-files,*,$(KERNEL_PATH)/vendor_ramdisk/,$(TARGET_COPY_OUT_VENDOR_RAMDISK)/lib/modules) \
-    $(call find-copy-subdir-files,*,$(KERNEL_PATH)/system_dlkm/,$(TARGET_COPY_OUT_SYSTEM_DLKM)/lib/modules/5.15.94) \
-    $(call find-copy-subdir-files,*,$(KERNEL_PATH)/vendor_dlkm/,$(TARGET_COPY_OUT_VENDOR_DLKM)/lib/modules)
+BOOT_KERNEL_MODULES := $(strip $(shell cat $(DEVICE_PATH)/modules.load.recovery))
+BOARD_VENDOR_KERNEL_MODULES_LOAD := $(strip $(shell cat $(DEVICE_PATH)/modules.load.vendor_dlkm))
+BOARD_VENDOR_RAMDISK_KERNEL_MODULES_LOAD := $(strip $(shell cat $(DEVICE_PATH)/modules.load.first_stage))
+BOARD_VENDOR_RAMDISK_RECOVERY_KERNEL_MODULES_LOAD  := $(strip $(shell cat $(DEVICE_PATH)/modules.load.recovery))
 
 # Lineage Health
 TARGET_HEALTH_CHARGING_CONTROL_CHARGING_PATH := /sys/class/qcom-battery/input_suspend
