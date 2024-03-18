@@ -24,5 +24,8 @@ type vendor_mac_vendor_data_file, data_file_type, file_type, mlstrustedobject;
 # Mlipay
 type ta_data_file, data_file_type, file_type;;
 
+# last_kmsg
+type proc_last_kmsg, fs_type, proc_type;
+
 # Thermal
 type thermal_data_file, data_file_type, file_type;
