@@ -5,6 +5,6 @@
 //
 
 runtime_resource_overlay {
-    name: "SystemUIResTopaz",
+    name: "FrameworksResSpes",
     device_specific: true,
 }

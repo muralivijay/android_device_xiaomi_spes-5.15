@@ -7,7 +7,7 @@
 BUILD_BROKEN_DUP_RULES := true
 BUILD_BROKEN_ELF_PREBUILT_PRODUCT_COPY_FILES := true
 
-DEVICE_PATH := device/xiaomi/topaz
+DEVICE_PATH := device/xiaomi/spes
 KERNEL_PATH := $(DEVICE_PATH)-kernel
 
 # A/B
@@ -82,8 +82,8 @@ USE_OPENGL_RENDERER := true
 HWUI_COMPILE_FOR_PERF := true
 
 # Init
-TARGET_INIT_VENDOR_LIB := //$(DEVICE_PATH):init_topaz
-TARGET_RECOVERY_DEVICE_MODULES := init_topaz
+TARGET_INIT_VENDOR_LIB := //$(DEVICE_PATH):init_spes
+TARGET_RECOVERY_DEVICE_MODULES := init_spes
 
 # Kernel
 BOARD_KERNEL_BASE := 0x00000000
@@ -272,4 +272,4 @@ WIFI_HIDL_UNIFIED_SUPPLICANT_SERVICE_RC_ENTRY := true
 WPA_SUPPLICANT_VERSION := VER_0_8_X
 
 # Include the proprietary files BoardConfig.
-include vendor/xiaomi/topaz/BoardConfigVendor.mk
+include vendor/xiaomi/spes/BoardConfigVendor.mk

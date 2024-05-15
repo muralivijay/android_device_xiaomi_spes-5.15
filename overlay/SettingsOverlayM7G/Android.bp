@@ -1,4 +1,0 @@
-runtime_resource_overlay {
-    name: "SettingsOverlayM7G",
-    product_specific: true,
-}

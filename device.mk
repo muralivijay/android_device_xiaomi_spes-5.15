@@ -386,14 +386,8 @@ PRODUCT_PACKAGES += \
     CarrierConfigResCommon \
     FrameworksResCommon \
     FrameworksResTarget \
-    FrameworksResTopaz \
-    SettingsResTopaz \
-    SettingsOverlayM7G \
-    SettingsOverlayM7N \
-    SettingsOverlayM7L \
-    SettingsOverlayM7IN \
+    FrameworksResSpes \
     SystemUIResCommon \
-    SystemUIResTopaz \
     TelecommResCommon \
     TelephonyResCommon \
     WifiResCommon \
@@ -571,4 +565,4 @@ PRODUCT_BOOT_JARS += \
     WfdCommon
 
 # Inherit from the proprietary files makefile.
-$(call inherit-product, vendor/xiaomi/topaz/topaz-vendor.mk)
+$(call inherit-product, vendor/xiaomi/spes/spes-vendor.mk)
