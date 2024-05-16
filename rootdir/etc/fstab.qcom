@@ -58,7 +58,6 @@ product                                                 /product                
 /dev/block/by-name/init_boot                            /init_boot                emmc    defaults                                             slotselect,avb=vbmeta,first_stage_mount
 /dev/block/by-name/vendor_boot                          /vendor_boot              emmc    defaults                                             slotselect,avb=vbmeta,first_stage_mount
 /dev/block/by-name/dtbo                                 /dtbo                     emmc    defaults                                             slotselect,avb=vbmeta,first_stage_mount
-/dev/block/by-name/recovery                             /recovery                 emmc    defaults                                             slotselect,avb=vbmeta,first_stage_mount
 #/dev/block/bootdevice/by-name/system                    /                      ext4    ro,barrier=1                                         wait,slotselect,avb
 /dev/block/by-name/metadata                             /metadata              f2fs    noatime,nosuid,nodev,discard                         wait,check,formattable,first_stage_mount
 # Add fs_mgr flag - sysfs_path=/sys/devices/platform/soc/xxxx.[ufshc|sdhci] to userdata entry, based on UFS|eMMC device.
