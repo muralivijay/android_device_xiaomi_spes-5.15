@@ -1,3 +1,6 @@
+on early-init
+    start fingerprint_sh
+
 on init
     chown system system /dev/goodix_fp
     chmod 0644 /dev/goodix_fp
@@ -39,6 +42,13 @@ service vendor.goodix-events /vendor/bin/init.goodix.events.sh
     class late_start
     user root
     group root system input
+    disabled
+    oneshot
+
+service fingerprint_sh /vendor/bin/init.fingerprint.sh
+    class main
+    user root
+    group root system
     disabled
     oneshot
 

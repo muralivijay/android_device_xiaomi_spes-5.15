@@ -135,6 +135,12 @@ sh_binary {
 }
 
 sh_binary {
+    name: "init.fingerprint.sh",
+    src: "bin/init.fingerprint.sh",
+    vendor: true,
+}
+
+sh_binary {
     name: "system_dlkm_modprobe.sh",
     src: "bin/system_dlkm_modprobe.sh",
     vendor: true,
@@ -145,3 +151,4 @@ sh_binary {
     src: "bin/vendor_modprobe.sh",
     vendor: true,
 }
+
