@@ -237,3 +237,4 @@ qrtr.ko
 ns.ko
 qrtr-smd.ko
 msm_drm.ko
+focaltech_fts_i2c.ko
