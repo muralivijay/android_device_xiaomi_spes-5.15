@@ -83,8 +83,6 @@ rt_pd_manager.ko
 xm_adapter_class.ko
 xm_pd_adapter.ko
 pm8941-pwrkey.ko
-fpc1020_platform_tee.ko
-goodix_fp.ko
 rtc-pm8xxx.ko
 i2c-msm-geni.ko
 qcom-pon.ko
