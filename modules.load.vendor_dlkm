@@ -91,7 +91,9 @@ qpnp-smb5-main.ko
 qcom-qpnp-qg.ko
 qti_battery_charger.ko
 max77729_fuelgauge.ko
+max77729_fuelgauge_iio.ko
 max77729_charger.ko
+max77729_charger_iio.ko
 qcom-pmic-voter.ko
 bq2589x_charger.ko
 sc8551_charger.ko
