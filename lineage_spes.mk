@@ -22,6 +22,9 @@ PRODUCT_MODEL := Redmi Note 11
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
+# product
+TARGET_BUILD_TYPE=debug
+
 # Device Configs
 TARGET_BOOT_ANIMATION_RES := 1080
 TARGET_FACE_UNLOCK_SUPPORTED := true
