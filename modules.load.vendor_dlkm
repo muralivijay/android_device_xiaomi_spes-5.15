@@ -83,6 +83,8 @@ rt_pd_manager.ko
 xm_adapter_class.ko
 xm_pd_adapter.ko
 pm8941-pwrkey.ko
+fpc1020_platform_tee.ko
+goodix_fp.ko
 rtc-pm8xxx.ko
 i2c-msm-geni.ko
 qcom-pon.ko
@@ -93,8 +95,8 @@ qti_battery_charger.ko
 max77729_fuelgauge.ko
 max77729_fuelgauge_iio.ko
 max77729_charger.ko
-max77729_charger_iio.ko
 qcom-pmic-voter.ko
+max77729_charger_iio.ko
 bq2589x_charger.ko
 sc8551_charger.ko
 sm5602_fg.ko
@@ -163,7 +165,9 @@ gpr_dlkm.ko
 snd_event_dlkm.ko
 q6_notifier_dlkm.ko
 q6_pdr_dlkm.ko
+qce50_dlkm.ko
 rmnet_sch.ko
+qcedev-mod_dlkm.ko
 mbhc_dlkm.ko
 rndisipam.ko
 ipam.ko
@@ -191,15 +195,20 @@ wcd9xxx_dlkm.ko
 aw87xxx_dlkm.ko
 rmnet_perf.ko
 rmnet_core.ko
+qrng_dlkm.ko
 q6_dlkm.ko
 btpower.ko
 cnss_utils.ko
+tz_log_dlkm.ko
 va_macro_dlkm.ko
 rmnet_wlan.ko
 rmnet_perf_tether.ko
+smcinvoke_dlkm.ko
+qseecom_dlkm.ko
 wsa881x_analog_dlkm.ko
 focaltech_fts_i2c.ko
 machine_dlkm.ko
+hdcp_qseecom_dlkm.ko
 msm_drm.ko
 cnss_nl.ko
 bt_fm_slim.ko
@@ -208,6 +217,7 @@ rmnet_aps.ko
 rmnet_offload.ko
 pinctrl_lpi_dlkm.ko
 wlan.ko
+qcrypto-msm_dlkm.ko
 ipa_clientsm.ko
 mmrm_test_module.ko
 tx_macro_dlkm.ko
