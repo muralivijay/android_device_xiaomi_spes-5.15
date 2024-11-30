@@ -289,6 +289,7 @@ PRODUCT_PACKAGES += \
     init.kernel.post_boot.sh \
     init.qcom.class_core.sh \
     init.qcom.early_boot.sh \
+    init.qcom.post_boot.sh \
     init.qcom.sh \
     init.qti.dcvs.sh \
     init.qti.early_init.sh \
