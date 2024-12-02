@@ -89,14 +89,7 @@ on post-fs-data
     mkdir /data/vendor/thermal 0771 root system
     mkdir /data/vendor/thermal/config 0771 root system
 
-# Creat directory used for touchpanel_selftest
-    mkdir /data/vendor/touchpad
-    chown system system /data/vendor/touchpad
-    chmod 0775 /data/vendor/touchpad
-
 #flashlight permission
-    chmod 0660 /sys/class/leds/led:torch/brightness
-    chown system system /sys/class/leds/led:torch/brightness
     chmod 0660 /sys/class/leds/vibrator/state
     chown system system /sys/class/leds/vibrator/state
     chmod 0660 /sys/class/leds/vibrator/duration
@@ -132,17 +125,8 @@ on post-fs-data
     mkdir /mnt/vendor/persist/camera
     chown root system /mnt/vendor/persist/camera
     chmod 0777 /mnt/vendor/persist/camera
-    chmod 0644 /mnt/vendor/persist/camera/rear_dc_cal_wu.bin
     chmod 0777 /data/vendor/camera
-    chmod 0666 /data/vendor/camera/com.xiaomi.dcal.wu.data
 # Create factory dualcam calibration contents --tongzhiqiang-20220929 end
-
-# Create miui dualcam calibration file --qiankaifeng-20221117 start
-    write /data/vendor/camera/wide_w[4080]_h[3072].NV12 0
-    write /data/vendor/camera/ultra_w[3264]_h[2448].NV12 0
-    chmod 0666 /data/vendor/camera/wide_w[4080]_h[3072].NV12
-    chmod 0666 /data/vendor/camera/ultra_w[3264]_h[2448].NV12
-# Create miui dualcam calibration file --qiankaifeng-20221117 end
 
 #start tombstones/modem
 mkdir /data/tombstones/modem 0771 system system encryption=Require
@@ -152,19 +136,6 @@ on early-boot
 
 on boot
     write /dev/cpuset/audio-app/cpus 1-2
-
-#Display
-    chown system system /sys/class/mi_display/disp-DSI-0/disp_param
-    chmod 0664 /sys/class/mi_display/disp-DSI-0/disp_param
-    chown system system /sys/class/mi_display/disp-DSI-0/mipi_rw
-    chmod 0664 /sys/class/mi_display/disp-DSI-0/mipi_rw
-    chown system system /sys/class/mi_display/disp-DSI-0/panel_info
-    chmod 0444 /sys/class/mi_display/disp-DSI-0/panel_info
-    chown system system /sys/class/mi_display/disp-DSI-0/doze_brightness
-
-#touch funtions permissions setting
-	chown system system /sys/class/touch/touch_dev/palm_sensor
-	chmod 0664 /sys/class/touch/touch_dev/palm_sensor
 
     # DT2W
     chown system system /proc/tp_gesture
@@ -230,18 +201,6 @@ on property:init.svc.vendor.per_mgr=running
 
 on property:sys.shutdown.requested=*
     stop vendor.per_proxy
-
-# TouchPad settings for tp_grip_area
-	on property:sys.tp.grip_enable=0
-	write /proc/tp_grip_area 0
-	on property:sys.tp.grip_enable=1
-	write /proc/tp_grip_area 1
-	on property:sys.tp.grip_enable=90
-	write /proc/tp_grip_area 90
-	on property:sys.tp.grip_enable=180
-	write /proc/tp_grip_area 180
-	on property:sys.tp.grip_enable=270
-	write /proc/tp_grip_area 270
 
 service dcvs-sh /vendor/bin/init.qti.dcvs.sh
     class late_start
