@@ -535,6 +535,8 @@ vendor/lib64/libloc_api_v02.so
 vendor/lib64/libloc_api_wds.so
 vendor/lib64/libloc_core.so
 vendor/lib64/libloc_eng_hub.so
+vendor/lib64/liblowi_common.so
+vendor/lib64/libloc_mq_client.so
 vendor/lib64/libloc_qwes_iface.so
 vendor/lib64/libloc_socket.so
 vendor/lib64/libloc_util.so
