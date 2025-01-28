@@ -461,6 +461,9 @@ vendor/firmware/a610_zap.elf
 vendor/firmware/a610_zap.mdt
 vendor/firmware/a630_sqe.fw
 
+# Firmware video - xun-t-oss
+vendor/firmware/venus.mbn
+
 # FM
 system_ext/lib64/fm_helium.so
 system_ext/lib64/libfm-hci.so
