@@ -8,7 +8,7 @@ allow init proc_last_kmsg:file setattr;
 
 # fingerprint
 allow init vendor_file:file {execute};
-allow init vendor_file:file {execute_no_trans};
-allow init vendor_toolbox_exec:file {execute_no_trans};
+#allow init vendor_file:file {execute_no_trans};
+#allow init vendor_toolbox_exec:file {execute_no_trans};
 allow init init:capability {sys_module};
 allow init vendor_file:system  {module_load};
