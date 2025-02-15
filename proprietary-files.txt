@@ -537,6 +537,7 @@ vendor/lib64/liblbs_core.so
 vendor/lib64/libloadalgo_stub.so
 vendor/lib64/libloc_api_v02.so
 vendor/lib64/libloc_api_wds.so
+vendor/lib64/libloc_base_util.so
 vendor/lib64/libloc_core.so
 vendor/lib64/libloc_eng_hub.so
 vendor/lib64/liblowi_common.so
