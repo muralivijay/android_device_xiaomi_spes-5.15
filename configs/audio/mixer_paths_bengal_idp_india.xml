@@ -483,57 +483,12 @@
     <ctl name="MultiMedia16 Mixer SLIM_8_TX" value="0" />
     <ctl name="MultiMedia16 Mixer USB_AUDIO_TX" value="0" />
 
-    <!-- These are audio route (FE to BE) specific mixer settings -->
-    <!-- lct modify begin-->
-    <path name="ultrasound-proximity">
-        <ctl name="Ultrasound Enable" value="On" />
-        <ctl name="Ultrasound Mode" value="918" />
-        <ctl name="Ultrasound Custom Setting 4" value="1"/>
-        <ctl name="Ultrasound Debug Mode" value="0" />
-        <ctl name="Ultrasound Log Level" value="0" />
-    </path>
-
     <path name="ultrasound-speaker-mode">
         <ctl name="Ultrasound Mode" value="1120" />
     </path>
 
     <path name="ultrasound-handset-mode">
         <ctl name="Ultrasound Mode" value="918" />
-    </path>
-
-    <path name="ultrasound-proximity-output">
-    </path>
-
-    <path name="ultrasound-proximity-input">
-    </path>
-
-    <path name="ultrasound-proximity-input headset-mic">
-    </path>
-
-    <path name="ultrasound-proximity-output headphones">
-    </path>
-
-    <path name="ultrasound-proximity-output ultrasound-output">
-    </path>
-
-    <path name="ultrasound-proximity-output headset">
-    </path>
-
-    <path name="ultrasound-gesture1">
-        <ctl name="Ultrasound Enable" value="On"/>
-        <!--  release mode  -->
-        <!--ctl name="Ultrasound Mode" value="584"/-->
-        <!--  debug mode  -->
-       <ctl name="Ultrasound Mode" value="585"/>
-        <ctl name="Ultrasound Log Level" value="0" />
-    </path>
-
-    <path name="ultrasound-gesture1-output">
-        <!--  mixer controls for RX use-case  -->
-    </path>
-
-    <path name="ultrasound-gesture1-input">
-        <!--  mixer controls for TX use-case  -->
     </path>
 
     <path name="ultrasound-rampdown">
