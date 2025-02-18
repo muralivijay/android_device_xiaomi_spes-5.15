@@ -89,19 +89,13 @@ on post-fs-data
     mkdir /data/vendor/thermal 0771 root system
     mkdir /data/vendor/thermal/config 0771 root system
 
-#flashlight permission
+# Vibrator
     chmod 0660 /sys/class/leds/vibrator/state
-    chown system system /sys/class/leds/vibrator/state
     chmod 0660 /sys/class/leds/vibrator/duration
+    chmod 0666 /sys/class/leds/vibrator/activate
+    chown system system /sys/class/leds/vibrator/state
     chown system system /sys/class/leds/vibrator/duration
-    chmod 0660 /sys/class/leds/vibrator/activate
     chown system system /sys/class/leds/vibrator/activate
-    chmod 0660 /sys/devices/platform/soc/soc:pwm_vibrator/leds/vibrator/state
-    chown system system /sys/devices/platform/soc/soc:pwm_vibrator/leds/vibrator/state
-    chmod 0660 /sys/devices/platform/soc/soc:pwm_vibrator/leds/vibrator/duration
-    chown system system /sys/devices/platform/soc/soc:pwm_vibrator/leds/vibrator/duration
-    chmod 0660 /sys/devices/platform/soc/soc:pwm_vibrator/leds/vibrator/activate
-    chown system system /sys/devices/platform/soc/soc:pwm_vibrator/leds/vibrator/activate
 
 #odm-battery
    chmod 0664 /sys/class/qcom-battery/odm_battery/batt_manufacturer
