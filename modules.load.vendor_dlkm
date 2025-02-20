@@ -191,6 +191,7 @@ bolero_cdc_dlkm.ko
 wcd937x_dlkm.ko
 wcd9xxx_dlkm.ko
 aw87xxx_dlkm.ko
+lct_pinctrl_dlkm.ko
 rmnet_perf.ko
 rmnet_core.ko
 qrng_dlkm.ko
@@ -214,7 +215,7 @@ adsp_loader_dlkm.ko
 rmnet_aps.ko
 rmnet_offload.ko
 pinctrl_lpi_dlkm.ko
-wlan.ko
+qca_cld3_wlan.ko
 qcrypto-msm_dlkm.ko
 ipa_clientsm.ko
 mmrm_test_module.ko
