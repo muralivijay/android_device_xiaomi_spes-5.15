@@ -86,11 +86,6 @@ vendor/lib64/vendor.qti.hardware.pal@1.0.so
 
 # Audio Configs
 vendor/etc/audio_diag.cfg
-vendor/etc/mixer_paths_bengal_idp_india.xml
-vendor/etc/mixer_paths_bengal_idp.xml
-vendor/etc/mixer_paths_bengal_qrd.xml
-vendor/etc/mixer_paths_scubaidp.xml
-vendor/etc/mixer_paths_scubaqrd.xml
 
 # Audio Graph Manager
 vendor/bin/cplay
