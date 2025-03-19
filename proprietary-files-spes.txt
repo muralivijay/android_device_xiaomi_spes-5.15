@@ -392,6 +392,11 @@ vendor/firmware/ipa_fws.mdt
 vendor/firmware/st21nfc_fw.bin
 vendor/firmware/st21nfc_fw7.bin
 
+# Sensors
+vendor/etc/elliptic_sensor.xml
+vendor/lib64/hw/sensors.elliptic@2.0.so
+vendor/lib64/libnotifyaudiohal.so
+
 # Sensors Config
 vendor/etc/sensors/config/bengal_adux1050_0.json
 vendor/etc/sensors/config/bengal_bu27030_0.json
