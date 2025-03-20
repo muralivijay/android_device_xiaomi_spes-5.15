@@ -18,7 +18,7 @@ service vendor.st_nfc_hal_service /vendor/bin/hw/android.hardware.nfc@1.2-servic
 on post-fs && property:ro.boot.hwname=spesn
     start stflashtool
 
-on boot
+on init
     stop nfc_hal_service
 
 on boot && property:ro.boot.hwname=spesn
