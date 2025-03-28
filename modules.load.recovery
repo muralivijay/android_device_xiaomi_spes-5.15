@@ -195,7 +195,6 @@ rproc_qcom_common.ko
 qcom_q6v5.ko
 qcom_q6v5_pas.ko
 qcom_spss.ko
-qcom_sysmon.ko
 qcom_glink.ko
 qcom_glink_rpm.ko
 rpm-smd.ko
