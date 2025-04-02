@@ -205,7 +205,7 @@ user: AID_SYSTEM
 group: AID_SYSTEM
 caps: 0
 
-[vendor/firmware_mnt/image/*]
+[vendor/firmware/*]
 mode: 0771
 user: AID_SYSTEM
 group: AID_SYSTEM
