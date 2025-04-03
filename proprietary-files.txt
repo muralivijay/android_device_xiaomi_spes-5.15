@@ -71,6 +71,10 @@ vendor/lib/rfsa/adsp/misound_res_spk.bin
 vendor/lib64/rfsa/adsp/libsns_device_mode_skel.so
 vendor/lib64/rfsa/adsp/libsns_low_lat_stream_skel.so
 
+# Acdbdata
+vendor/etc/acdbdata/bengal_idp/IDP_acdb_cal.acdb
+vendor/etc/acdbdata/bengal_idp/IDP_workspaceFileXml.qwsp
+
 # Alarm
 product/app/PowerOffAlarm/PowerOffAlarm.apk
 system_ext/framework/vendor.qti.hardware.alarm-V1.0-java.jar
