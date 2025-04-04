@@ -9,47 +9,6 @@ vendor/lib/libadsprpc.so
 vendor/lib64/libadsp_default_listener.so
 vendor/lib64/libadsprpc.so
 
-# Adsp Firmware
-vendor/firmware/adsp.b00
-vendor/firmware/adsp.b01
-vendor/firmware/adsp.b02
-vendor/firmware/adsp.b03
-vendor/firmware/adsp.b04
-vendor/firmware/adsp.b05
-vendor/firmware/adsp.b06
-vendor/firmware/adsp.b07
-vendor/firmware/adsp.b08
-vendor/firmware/adsp.b09
-vendor/firmware/adsp.b10
-vendor/firmware/adsp.b12
-vendor/firmware/adsp.b13
-vendor/firmware/adsp.b14
-vendor/firmware/adsp.b15
-vendor/firmware/adsp.b16
-vendor/firmware/adsp.b17
-vendor/firmware/adsp.b18
-vendor/firmware/adsp.b19
-vendor/firmware/adsp.b20
-vendor/firmware/adsp.b21
-vendor/firmware/adsp.b22
-vendor/firmware/adsp.b23
-vendor/firmware/adsp.b24
-vendor/firmware/adsp.b25
-vendor/firmware/adsp.b26
-vendor/firmware/adsp.b27
-vendor/firmware/adsp.b28
-vendor/firmware/adsp.b29
-vendor/firmware/adsp.b30
-vendor/firmware/adsp.b31
-vendor/firmware/adsp.b32
-vendor/firmware/adsp.b33
-vendor/firmware/adsp.b34
-vendor/firmware/adsp.b35
-vendor/firmware/adsp.mdt
-vendor/firmware/adspr.jsn
-vendor/firmware/adsps.jsn
-vendor/firmware/adspua.jsn
-
 # ADSP Module
 vendor/lib/rfsa/adsp/libSnpeHtpV68Skel.so
 vendor/lib/rfsa/adsp/libSnpeHtpV69Skel.so
