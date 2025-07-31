@@ -127,10 +127,6 @@
     <ctl name="RDAC3_MUX" value="0" />
     <ctl name="EAR PA GAIN" value="G_0_DB" />
     <ctl name="wcd937x_aw87xxx_dev0_mode" value="Off" />
-    <ctl name="SpkrMonoL Sipa Audio Scene" value="Playback" />
-    <ctl name="SpkrMonoL Sipa Power" value="Off" />
-    <ctl name="FSM_Init" value="1" />
-    <ctl name="FSM_Scene" value="0" />
     <!-- lct modify end-->
     <ctl name="RX_EAR Mode" value="OFF" />
 
@@ -2404,8 +2400,6 @@
         <ctl name="AUX_RDAC Switch" value="1" />
         <ctl name="SpkrMono WSA_RDAC" value="Switch" />
         <ctl name="wcd937x_aw87xxx_dev0_mode" value="Music" />
-        <ctl name="SpkrMonoL Sipa Audio Scene" value="Playback" />
-        <ctl name="FSM_Scene" value="0" />
     </path>
 
     <path name="speaker-bot">
@@ -2423,8 +2417,6 @@
         <ctl name="AUX_RDAC Switch" value="1" />
         <ctl name="SpkrMono WSA_RDAC" value="Switch" />
         <ctl name="wcd937x_aw87xxx_dev0_mode" value="Voice" />
-        <ctl name="SpkrMonoL Sipa Audio Scene" value="Voice" />
-        <ctl name="FSM_Scene" value="1" />
     </path>
     <!-- lct modify end-->
 
