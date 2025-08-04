@@ -1,5 +1,5 @@
 runtime_resource_overlay {
-    name: "ApertureTopaz",
+    name: "ApertureSpes",
     sdk_version: "current",
     system_ext_specific: true,
 }
