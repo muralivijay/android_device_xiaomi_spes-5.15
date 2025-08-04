@@ -379,6 +379,24 @@ vendor/firmware/focaltech_ts_fw_samsung.bin
 # Audio Firmware
 vendor/firmware/aw87xxx_acf.bin
 
+# Snapdragon Computer Vision Engine
+-vendor/lib/libfastcvopt.so
+-vendor/lib64/libfastcvopt.so
+vendor/lib/libfastcvdsp_stub.so
+vendor/lib/libscveCommon.so
+vendor/lib/libscveCommon_stub.so
+vendor/lib/libscveObjectSegmentation.so
+vendor/lib/libscveObjectSegmentation_stub.so
+vendor/lib/libscveObjectTracker.so
+vendor/lib/libscveObjectTracker_stub.so
+vendor/lib64/libfastcvdsp_stub.so
+vendor/lib64/libscveCommon.so
+vendor/lib64/libscveCommon_stub.so
+vendor/lib64/libscveObjectSegmentation.so
+vendor/lib64/libscveObjectSegmentation_stub.so
+vendor/lib64/libscveObjectTracker.so
+vendor/lib64/libscveObjectTracker_stub.so
+
 # IPA firmware
 vendor/etc/init/ipa_fws.rc
 vendor/firmware/ipa_fws.b00
