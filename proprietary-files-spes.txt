@@ -1,4 +1,5 @@
-# All blobs below are extracted from miui_SPESNGlobal_V14.0.6.0.TGKMIXM_3bf72b1c44_13.0
+# All blobs below are extracted from miui_SPESNGlobal_V14.0.6.0.TGKMIXM_3bf72b1c44_13.0. except camera
+# All camera blobs are extracted from miui_SPESNGlobal_OS1.0.11.0.TGKMIXM_f5baa0b92b_13.0
 
 # ACDB
 vendor/etc/acdbdata/IDP/bengal-scubaidp-snd-card/IDP_Scuba_Bluetooth_cal.acdb
@@ -30,7 +31,7 @@ vendor/etc/acdbdata/nn_ns_models/fai__2.2.0_0.1__3.0.0_0.0__eai_1.00.pmd
 vendor/etc/acdbdata/nn_vad_models/fai_3.0.0_0.0_eai_1.00.pmd
 vendor/etc/acdbdata/adsp_avs_config.acdb
 
-# Camera
+# Camera - miui_SPESNGlobal_OS1.0.11.0.TGKMIXM_f5baa0b92b_13.0
 vendor/bin/f2player
 vendor/lib64/camera/com.qti.eeprom.irs2381c_polar.so
 vendor/lib64/camera/com.qti.eeprom.truly_cmb433.so
@@ -202,7 +203,7 @@ vendor/lib64/libwa_widelens_undistort.so
 vendor/lib64/libxmi_high_dynamic_range.so
 vendor/lib64/vendor.qti.hardware.camera.postproc@1.0-service-impl.so
 
-# Camera Arcsoft
+# Camera Arcsoft - miui_SPESNGlobal_OS1.0.11.0.TGKMIXM_f5baa0b92b_13.0
 vendor/lib64/libarcsoft_beautyshot.so
 vendor/lib64/libarcsoft_dualcam_refocus_image.so
 vendor/lib64/libarcsoft_hdr_detection.so
@@ -212,7 +213,7 @@ vendor/lib64/libarcsoft_portrait_lighting.so
 vendor/lib64/libarcsoft_portrait_lighting_c.so
 vendor/lib64/libarcsoft_supernight.so
 
-# Camera CamX
+# Camera CamX - miui_SPESNGlobal_OS1.0.11.0.TGKMIXM_f5baa0b92b_13.0
 vendor/lib64/libcamxexternalformatutils.so
 vendor/lib64/libcamxfacialfeatures.so
 vendor/lib64/libcamxfdalgo.so
@@ -225,7 +226,7 @@ vendor/lib64/libcamxswispiqmodule.so
 vendor/lib64/libcamxswprocessalgo.so
 vendor/lib64/libcamxtintlessalgo.so
 
-# Camera Components
+# Camera Components - miui_SPESNGlobal_OS1.0.11.0.TGKMIXM_f5baa0b92b_13.0
 vendor/lib64/camera/components/com.mi.node.realtimebokeh.so
 vendor/lib64/camera/components/com.qti.camx.chiiqutils.so
 vendor/lib64/camera/components/com.qti.eisv2.so
@@ -270,7 +271,7 @@ vendor/lib64/camera/components/com.qtistatic.stats.awb.so
 vendor/lib64/camera/components/com.qtistatic.stats.pdlib.so
 vendor/lib64/camera/components/com.vidhance.node.processing.so
 
-# Camera Configs
+# Camera Configs - miui_SPESNGlobal_OS1.0.11.0.TGKMIXM_f5baa0b92b_13.0
 vendor/etc/camera/model/dof_model/capture_cache
 vendor/etc/camera/model/dof_model/capture_model
 vendor/etc/camera/model/dof_model/capture_policy
@@ -316,10 +317,10 @@ vendor/etc/camera/morpho_lowlight_2.0_ofilm_s5kjn1_wide_global.xml
 vendor/etc/camera/morpho_lowlight_2.0_ofilm_s5kjn1_wide_india.xml
 vendor/etc/camera/vidhance_calibration
 
-# Camera Device
+# Camera Device - miui_SPESNGlobal_OS1.0.11.0.TGKMIXM_f5baa0b92b_13.0
 vendor/lib64/vendor.qti.hardware.camera.device@3.5.so
 
-# Camera Feature
+# Camera Feature - miui_SPESNGlobal_OS1.0.11.0.TGKMIXM_f5baa0b92b_13.0
 vendor/lib64/com.qti.chiusecaseselector.so
 vendor/lib64/com.qti.feature2.anchorsync.so
 vendor/lib64/com.qti.feature2.demux.so
@@ -337,7 +338,7 @@ vendor/lib64/com.qti.feature2.serializer.so
 vendor/lib64/com.qti.feature2.stub.so
 vendor/lib64/com.qti.feature2.swmf.so
 
-# Camera (Prebuilt)
+# Camera (Prebuilt) - miui_SPESNGlobal_OS1.0.11.0.TGKMIXM_f5baa0b92b_13.0
 vendor/bin/hw/android.hardware.camera.provider@2.4-service_64
 vendor/etc/init/android.hardware.camera.provider@2.4-service_64.rc
 vendor/lib64/android.hardware.camera.provider@2.4-external.so
@@ -353,7 +354,7 @@ vendor/lib64/camera.device@3.6-external-impl.so
 vendor/lib64/vendor.qti.hardware.camera.device@1.0.so
 vendor/lib64/vendor.qti.hardware.camera.postproc@1.0.so
 
-# Camera Sensor
+# Camera Sensor - miui_SPESNGlobal_OS1.0.11.0.TGKMIXM_f5baa0b92b_13.0
 vendor/lib64/libmmcamera_cac3.so
 vendor/lib64/libmmcamera_faceproc.so
 vendor/lib64/libmmcamera_faceproc2.so
